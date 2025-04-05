@@ -12,7 +12,7 @@ interface ThemeStore {
 export const useThemeStore = create<ThemeStore>()(
   persist(
     (set) => ({
-      theme: "dark", //? if null, use device color scheme
+      theme: "dark",
       navigationTheme: "dark",
       setTheme: (theme) => set({ theme }),
     }),
