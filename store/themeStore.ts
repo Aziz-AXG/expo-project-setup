@@ -13,7 +13,7 @@ export const useThemeStore = create<ThemeStore>()(
   persist(
     (set) => ({
       theme: "dark",
-      navigationTheme: "dark",
+      navigationTheme: "dark", //? use this for navigation if we use more than two themes
       setTheme: (theme) => set({ theme }),
     }),
     {
