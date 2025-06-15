@@ -14,6 +14,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { loadLanguage } from "../i18n";
 import { useTranslation } from "react-i18next";
+import "../global.css"
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();

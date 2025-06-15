@@ -1,4 +1,4 @@
-import { Button, Image, StyleSheet } from "react-native";
+import { Button, Image } from "react-native";
 
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
@@ -29,12 +29,12 @@ export default function HomeScreen() {
       headerImage={
         <Image
           source={require("@/assets/images/partial-react-logo.png")}
-          style={styles.reactLogo}
+          className="h-[178px] w-[290px] bottom-0 left-0 absolute"
         />
       }
     >
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title"> {t("hello")}!</ThemedText>
+      <ThemedView className="flex-row items-center gap-2">
+        <ThemedText type="title" className="animate-bounce font-bold text-3xl"> {t("hello")}!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView>
@@ -52,28 +52,3 @@ export default function HomeScreen() {
     </ParallaxScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: "absolute",
-  },
-  activeFlag: {
-    transform: [{ scale: 1.2 }],
-  },
-  inactiveFlag: {
-    opacity: 0.5,
-  },
-});
