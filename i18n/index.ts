@@ -31,12 +31,7 @@ export const loadLanguage = async () => {
     savedLanguage = Localization.getLocales()[0].languageTag;
   }
 
-  if (Platform.OS === "web") {
-    document.body.setAttribute(
-      "dir",
-      savedLanguage.includes("ar") ? "rtl" : "ltr"
-    );
-  }
+ 
 
   i18n.changeLanguage(savedLanguage);
 };
@@ -47,16 +42,10 @@ export const changeLanguage = async (lang: string) => {
     if (lang.includes("ar")) {
       I18nManager.allowRTL(true);
       I18nManager.forceRTL(true);
-      if (Platform.OS === "web") {
-        document.body.setAttribute("dir", "rtl");
-      }
       settingsStorage.set("isRTL", true);
     } else {
       I18nManager.allowRTL(false);
       I18nManager.forceRTL(false);
-      if (Platform.OS === "web") {
-        document.body.setAttribute("dir", "ltr");
-      }
       settingsStorage.set("isRTL", false);
     }
   });

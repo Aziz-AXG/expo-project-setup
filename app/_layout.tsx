@@ -13,6 +13,7 @@ import "react-native-reanimated";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { loadLanguage } from "../i18n";
+import { useTranslation } from "react-i18next";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -21,6 +22,8 @@ const queryClient = new QueryClient();
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
+  const { i18n } = useTranslation();
+  
   const [loaded] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
@@ -43,7 +46,13 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <QueryClientProvider client={queryClient}>
-        <Stack>
+        <Stack 
+         screenOptions={{
+          headerShown: false,
+          contentStyle: {
+            direction: i18n.dir(),
+          },
+        }}>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>

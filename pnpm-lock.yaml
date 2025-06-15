@@ -32,9 +32,6 @@ importers:
       expo-constants:
         specifier: ~17.1.6
         version: 17.1.6(expo@53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))
-      expo-dev-menu:
-        specifier: ^6.0.25
-        version: 6.0.25(expo@53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))
       expo-font:
         specifier: ~13.3.1
         version: 13.3.1(expo@53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react@19.0.0)
@@ -1820,16 +1817,6 @@ packages:
     peerDependencies:
       expo: '*'
       react-native: '*'
-
-  expo-dev-menu-interface@1.9.3:
-    resolution: {integrity: sha512-KY/dWTBE1l47i9V366JN5rC6YIdOc9hz8yAmZzkl5DrPia5l3M2WIjtnpHC9zUkNjiSiG2urYoOAq4H/uLdmyg==}
-    peerDependencies:
-      expo: '*'
-
-  expo-dev-menu@6.0.25:
-    resolution: {integrity: sha512-K2m4z/I+CPWbMtHlDzU68lHaQs52De0v5gbsjAmA5ig8FrYh4MKZvPxSVANaiKENzgmtglu8qaFh7ua9Gt2TfA==}
-    peerDependencies:
-      expo: '*'
 
   expo-eas-client@0.14.3:
     resolution: {integrity: sha512-BW2mSNEjFRFC8/CbkMQ3mfVhBdeZIjZhNfncw7PP80xEptLWhVjGTqwG8Usi0/yPpIu/YNYgop+XGMfhXyh9uA==}
@@ -6104,15 +6091,6 @@ snapshots:
       react-native: 0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
     transitivePeerDependencies:
       - supports-color
-
-  expo-dev-menu-interface@1.9.3(expo@53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)):
-    dependencies:
-      expo: 53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
-
-  expo-dev-menu@6.0.25(expo@53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)):
-    dependencies:
-      expo: 53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
-      expo-dev-menu-interface: 1.9.3(expo@53.0.11(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.3(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))
 
   expo-eas-client@0.14.3: {}
 
