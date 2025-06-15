@@ -34,13 +34,14 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "expo-localization"
+      "expo-localization",
+      "expo-font",
+      "expo-web-browser"
     ],
     "extra": {
       "supportsRTL": true,
       "forcesRTL": true
     },
-
     "experiments": {
       "typedRoutes": true
     }

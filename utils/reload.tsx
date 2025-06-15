@@ -1,6 +1,5 @@
 import * as Updates from "expo-updates";
 import { Platform } from "react-native";
-import { openMenu } from "expo-dev-menu";
 
 const reload = () => {
   if (Platform.OS === "web") {
@@ -12,7 +11,7 @@ const reload = () => {
     if (!__DEV__) {
       Updates.reloadAsync();
     } else {
-      openMenu();
+    
     }
   }
 };
